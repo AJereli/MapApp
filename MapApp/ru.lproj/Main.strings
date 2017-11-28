@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Change language"; ObjectID = "JFU-aU-QxH"; */
+"JFU-aU-QxH.normalTitle" = "Change language";
+
+/* Class = "UITextField"; placeholder = "Numers"; ObjectID = "LeO-0F-EaB"; */
+"LeO-0F-EaB.placeholder" = "Numers";
+
+/* Class = "UIButton"; normalTitle = "Clean"; ObjectID = "QIy-c4-j2t"; */
+"QIy-c4-j2t.normalTitle" = "Clean";
+
+/* Class = "UIButton"; normalTitle = "Me"; ObjectID = "SVm-D2-pVC"; */
+"SVm-D2-pVC.normalTitle" = "Me";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "bed-uS-dbV"; */
+"bed-uS-dbV.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "Edit by tap"; ObjectID = "x9x-Bl-SHY"; */
+"x9x-Bl-SHY.text" = "Edit by tap";
