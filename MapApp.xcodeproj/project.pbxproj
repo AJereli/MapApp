@@ -20,6 +20,8 @@
 		CE3354451FBF7AA1002F0B63 /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3354441FBF7AA1002F0B63 /* MapAppTests.swift */; };
 		CE3354501FBF7AA1002F0B63 /* MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33544F1FBF7AA1002F0B63 /* MapAppUITests.swift */; };
 		CE33545E1FBF7F10002F0B63 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33545D1FBF7F10002F0B63 /* Utils.swift */; };
+		CE3697912006BDEF008EC5CA /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3697902006BDEF008EC5CA /* RouteManager.swift */; };
+		CE3697932006C0CB008EC5CA /* LocationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3697922006C0CB008EC5CA /* LocationTransform.swift */; };
 		CE4D3A891FBF832E006A1097 /* MapUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D3A881FBF832E006A1097 /* MapUtils.swift */; };
 		CE4D3A8B1FBF90C9006A1097 /* MapMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D3A8A1FBF90C9006A1097 /* MapMark.swift */; };
 		CE4D3A8D1FBF9700006A1097 /* MapMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D3A8C1FBF9700006A1097 /* MapMarkView.swift */; };
@@ -68,6 +70,9 @@
 		CE33544F1FBF7AA1002F0B63 /* MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITests.swift; sourceTree = "<group>"; };
 		CE3354511FBF7AA1002F0B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE33545D1FBF7F10002F0B63 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE3697902006BDEF008EC5CA /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		CE3697922006C0CB008EC5CA /* LocationTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTransform.swift; sourceTree = "<group>"; };
+		CE3697942006CAC2008EC5CA /* LGuangzhou.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LGuangzhou.gpx; sourceTree = "<group>"; };
 		CE4D3A881FBF832E006A1097 /* MapUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUtils.swift; sourceTree = "<group>"; };
 		CE4D3A8A1FBF90C9006A1097 /* MapMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMark.swift; sourceTree = "<group>"; };
 		CE4D3A8C1FBF9700006A1097 /* MapMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkView.swift; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 		CE3354231FBF7AA1002F0B63 = {
 			isa = PBXGroup;
 			children = (
+				CE3697942006CAC2008EC5CA /* LGuangzhou.gpx */,
 				CE33542E1FBF7AA1002F0B63 /* MapApp */,
 				CE3354431FBF7AA1002F0B63 /* MapAppTests */,
 				CE33544E1FBF7AA1002F0B63 /* MapAppUITests */,
@@ -183,11 +189,12 @@
 		CE33542E1FBF7AA1002F0B63 /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE36978E2006BDEF008EC5CA /* Map Managers */,
 				CE33542F1FBF7AA1002F0B63 /* AppDelegate.swift */,
 				CE240A7A1FC8D11200D27589 /* AppleMap */,
-				CE4D3A8E1FBF998D006A1097 /* PolygonManager.swift */,
 				CE3354331FBF7AA1002F0B63 /* Main.storyboard */,
 				CE240A7D1FC8D3AC00D27589 /* BMViewController.swift */,
+				CE3697922006C0CB008EC5CA /* LocationTransform.swift */,
 				CE3354361FBF7AA1002F0B63 /* Assets.xcassets */,
 				CE3354381FBF7AA1002F0B63 /* LaunchScreen.storyboard */,
 				CE33543B1FBF7AA1002F0B63 /* Info.plist */,
@@ -214,6 +221,23 @@
 				CE3354511FBF7AA1002F0B63 /* Info.plist */,
 			);
 			path = MapAppUITests;
+			sourceTree = "<group>";
+		};
+		CE36978E2006BDEF008EC5CA /* Map Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CE36978F2006BDEF008EC5CA /* Baidu Cluster */,
+				CE3697902006BDEF008EC5CA /* RouteManager.swift */,
+			);
+			path = "Map Managers";
+			sourceTree = "<group>";
+		};
+		CE36978F2006BDEF008EC5CA /* Baidu Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D3A8E1FBF998D006A1097 /* PolygonManager.swift */,
+			);
+			path = "Baidu Cluster";
 			sourceTree = "<group>";
 		};
 		CEBB56951FCCC77D00F898FD /* BaiduMapKit */ = {
@@ -453,8 +477,10 @@
 				CE3354321FBF7AA1002F0B63 /* AppleMapController.swift in Sources */,
 				CE240A7E1FC8D3AC00D27589 /* BMViewController.swift in Sources */,
 				CE3354301FBF7AA1002F0B63 /* AppDelegate.swift in Sources */,
+				CE3697912006BDEF008EC5CA /* RouteManager.swift in Sources */,
 				CE4D3A8B1FBF90C9006A1097 /* MapMark.swift in Sources */,
 				CE4D3A8F1FBF998D006A1097 /* PolygonManager.swift in Sources */,
+				CE3697932006C0CB008EC5CA /* LocationTransform.swift in Sources */,
 				CE4D3A8D1FBF9700006A1097 /* MapMarkView.swift in Sources */,
 				CE33545E1FBF7F10002F0B63 /* Utils.swift in Sources */,
 			);

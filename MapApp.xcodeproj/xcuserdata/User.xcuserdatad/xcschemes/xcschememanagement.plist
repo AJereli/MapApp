@@ -7,7 +7,25 @@
 		<key>MapApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE33542B1FBF7AA1002F0B63</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE33543F1FBF7AA1002F0B63</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE33544A1FBF7AA1002F0B63</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
